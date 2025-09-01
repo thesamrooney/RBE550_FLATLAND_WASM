@@ -1,0 +1,20 @@
+[package]
+name = "flatland_wasm"
+version = "0.1.0"
+authors = ["Samuel Rooney <srooney@wpi.edu>"]
+edition = "2024"
+
+[dependencies]
+console_error_panic_hook = "0.1"
+getrandom = { version = "0.3.3", features = ["wasm_js"] }
+rand = "0.9.2"
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = [
+    "console",
+    "Document",
+    "HtmlElement",
+    "Node",
+    "Text",
+    "Window",
+] }
+

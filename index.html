@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Flatland</title>
+    <link data-trunk rel="css" href="src/app.css"/>
+    <base data-trunk-public-url/>
+</head>
+<body>
+    <link data-trunk rel="rust" href="Cargo.toml" data-wasm-opt="z" data-bin="flatland_wasm"/>
+</body>
+
+<script type="module">
+    addEventListener("TrunkApplicationStarted", (event) => {
+        console.log("application started - bindings:", window.wasmBindings, "WASM:", event.detail.wasm);
+    });
+</script>
+
+</html>

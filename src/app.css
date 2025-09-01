@@ -1,0 +1,20 @@
+
+body {
+	background-color: white;
+}
+
+#flatland_container {
+	border: 10px solid;
+	display: grid;
+	width: 640px;
+	height: 640px;
+	background-color: grey;
+	/* the next line is a war crime and i should be prosecuted */
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.flatland_cell {
+	font-size: 8px;
+	text-align: center;
+}
+
