@@ -1,3 +1,4 @@
+use crate::wasm_bindgen;
 use rand::seq::SliceRandom;
 use rand::{Rng, rng};
 

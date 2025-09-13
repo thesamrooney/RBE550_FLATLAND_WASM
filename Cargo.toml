@@ -16,5 +16,8 @@ web-sys = { version = "0.3", features = [
     "Node",
     "Text",
     "Window",
+    "HtmlCanvasElement",
+    "CanvasRenderingContext2d",
+    "MediaRecorder",
 ] }
 

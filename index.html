@@ -9,12 +9,16 @@
 </head>
 <body>
     <link data-trunk rel="rust" href="Cargo.toml" data-wasm-opt="z" data-bin="flatland_wasm"/>
+    <script data-trunk src="src/app.js"></script>
+    <div><canvas id="flatland_canvas" width="640" height="640" style="border:solid 5px;"></canvas></div>
+    <input style="width:650px;" type="button" id="flatland_restart" value="Restart Flatland" onclick="beginWasmGame();" />
+    <a id="flatland_download" href="">Download Recording as WEBM</a>
 </body>
 
-<script type="module">
-    addEventListener("TrunkApplicationStarted", (event) => {
-        console.log("application started - bindings:", window.wasmBindings, "WASM:", event.detail.wasm);
-    });
-</script>
+<!-- <script type="module"> -->
+<!--     addEventListener("TrunkApplicationStarted", (event) => { -->
+<!--         console.log("application started - bindings:", window.wasmBindings, "WASM:", event.detail.wasm); -->
+<!--     }); -->
+<!-- </script> -->
 
 </html>
